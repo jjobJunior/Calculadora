@@ -3,7 +3,8 @@ unit U_Calculadora;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.Edit;
 
@@ -28,8 +29,13 @@ type
     Layout1: TLayout;
     CaixaTopo: TLayout;
     EditDois: TEdit;
-    EdtiUm: TEdit;
-    Label1: TLabel;
+    EditUm: TEdit;
+    LblOperador: TLabel;
+    procedure BtnSomaClick(Sender: TObject);
+    procedure BtnSubtrairClick(Sender: TObject);
+    procedure BtnMultiplicarClick(Sender: TObject);
+    procedure BtnDividirClick(Sender: TObject);
+    procedure BtnIgualClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,7 +49,48 @@ implementation
 
 {$R *.fmx}
 
+procedure TForm1.BtnIgualClick(Sender: TObject);
+var
+  valorUm, valorDois: Double;
+begin
+  valorUm := strToFloat(EditUm.Text);
+  valorDois := strToFloat(EditDois.Text);
+end;
 
+procedure TForm1.BtnDividirClick(Sender: TObject);
+begin
+  LblOperador.Text := '/';
+  BtnSoma.Enabled := true;
+  BtnSubtrair.Enabled := true;
+  BtnMultiplicar.Enabled := true;
+  BtnDividir.Enabled := false;
+end;
 
+procedure TForm1.BtnMultiplicarClick(Sender: TObject);
+begin
+  LblOperador.Text := '*';
+  BtnSoma.Enabled := true;
+  BtnSubtrair.Enabled := true;
+  BtnMultiplicar.Enabled := false;
+  BtnDividir.Enabled := true;
+end;
+
+procedure TForm1.BtnSomaClick(Sender: TObject);
+begin
+  LblOperador.Text := '+';
+  BtnSoma.Enabled := false;
+  BtnSubtrair.Enabled := true;
+  BtnMultiplicar.Enabled := true;
+  BtnDividir.Enabled := true;
+end;
+
+procedure TForm1.BtnSubtrairClick(Sender: TObject);
+begin
+  LblOperador.Text := '-';
+  BtnSoma.Enabled := true;
+  BtnSubtrair.Enabled := false;
+  BtnMultiplicar.Enabled := true;
+  BtnDividir.Enabled := true;
+end;
 
 end.

@@ -3,9 +3,9 @@
 	<Transactions>
     <Transaction>2023/05/03 20:04:59.000.430,=C:\Users\job\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2023/05/29 22:12:14.000.056,=C:\Users\job\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/05/30 21:57:02.937,=C:\Users\job\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/05/30 21:59:07.261,C:\Users\job\Documents\CalculadoraDelphi\U_Calculadora.pas=C:\Users\job\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/05/30 21:59:07.261,C:\Users\job\Documents\CalculadoraDelphi\U_Calculadora.fmx=C:\Users\job\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2023/05/30 22:00:10.275,C:\Users\job\Documents\CalculadoraDelphi\Calculadora.dproj=C:\Users\job\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/05/30 21:57:02.000.937,=C:\Users\job\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/30 21:59:07.000.261,C:\Users\job\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\job\Documents\CalculadoraDelphi\U_Calculadora.fmx</Transaction>
+    <Transaction>2023/05/30 21:59:07.000.261,C:\Users\job\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\job\Documents\CalculadoraDelphi\U_Calculadora.pas</Transaction>
+    <Transaction>2023/05/30 22:00:10.000.275,C:\Users\job\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\job\Documents\CalculadoraDelphi\Calculadora.dproj</Transaction>
   </Transactions>
 </BorlandProject>
