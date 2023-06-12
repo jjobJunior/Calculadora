@@ -60,26 +60,26 @@ begin
 
   if (LblOperador.Text = '+') then
   begin
-    resultado := valorUm + valorDois;
-    // showmessage(floatToStr(resultado));
+    resultado := valorUm / valorDois;
+    //showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
   end
   else if (LblOperador.Text = '-') then
   begin
-    resultado := valorUm - valorDois;
-    // showmessage(floatToStr(resultado));
+     resultado := valorUm / valorDois;
+    //showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
   end
   else if (LblOperador.Text = '*') then
   begin
-    resultado := valorUm * valorDois;
-    // showmessage(floatToStr(resultado));
+      resultado := valorUm / valorDois;
+    //showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
   end
   else if (LblOperador.Text = '/') then
   begin
-    resultado := valorUm / valorDois;
-    // showmessage(floatToStr(resultado));
+      resultado := valorUm / valorDois;
+    //showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
   end;
 

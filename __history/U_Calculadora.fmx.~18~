@@ -210,12 +210,12 @@ object Form1: TForm1
       object EditResultado: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 4
-        ReadOnly = True
         TextSettings.Font.Size = 28.000000000000000000
         TextSettings.Font.StyleExt = {00060000000000000004000000}
         Position.X = 144.000000000000000000
+        Position.Y = 7.000000000000000000
         Size.Width = 113.000000000000000000
-        Size.Height = 33.000000000000000000
+        Size.Height = 26.000000000000000000
         Size.PlatformDefault = False
         StyledSettings = [Family, FontColor]
       end

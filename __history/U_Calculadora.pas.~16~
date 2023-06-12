@@ -58,29 +58,11 @@ begin
   valorUm := strToFloat(EditUm.Text);
   valorDois := strToFloat(EditDois.Text);
 
-  if (LblOperador.Text = '+') then
-  begin
-    resultado := valorUm + valorDois;
-    // showmessage(floatToStr(resultado));
-    EditResultado.Text := resultado.ToString;
-  end
-  else if (LblOperador.Text = '-') then
-  begin
-    resultado := valorUm - valorDois;
-    // showmessage(floatToStr(resultado));
-    EditResultado.Text := resultado.ToString;
-  end
-  else if (LblOperador.Text = '*') then
-  begin
-    resultado := valorUm * valorDois;
-    // showmessage(floatToStr(resultado));
-    EditResultado.Text := resultado.ToString;
-  end
-  else if (LblOperador.Text = '/') then
+  if (LblOperador.Text = '/') then
   begin
     resultado := valorUm / valorDois;
-    // showmessage(floatToStr(resultado));
-    EditResultado.Text := resultado.ToString;
+    showmessage(floatToStr(resultado));
+    //EditResultado.Text := resultado.ToString;
   end;
 
 end;
