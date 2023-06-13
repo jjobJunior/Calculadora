@@ -24,6 +24,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 5
       Text = '5'
+      OnClick = BtnCincoClick
     end
     object BtnDividir: TButton
       Position.X = 297.000000000000000000
@@ -43,6 +44,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 1
       Text = '2'
+      OnClick = BtnDoisClick
     end
     object BtnIgual: TButton
       Position.X = 202.000000000000000000
@@ -72,6 +74,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 10
       Text = '9'
+      OnClick = BtnNoveClick
     end
     object BtnOito: TButton
       Position.X = 106.000000000000000000
@@ -81,6 +84,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 9
       Text = '8'
+      OnClick = BtnOitoClick
     end
     object BtnPonto: TButton
       Position.X = 10.000000000000000000
@@ -99,6 +103,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 4
       Text = '4'
+      OnClick = BtnQuatroClick
     end
     object BtnSeis: TButton
       Position.X = 202.000000000000000000
@@ -108,6 +113,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 6
       Text = '6'
+      OnClick = BtnSeisClick
     end
     object BtnSete: TButton
       Position.X = 10.000000000000000000
@@ -117,6 +123,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 8
       Text = '7'
+      OnClick = BtnSeteClick
     end
     object BtnSoma: TButton
       Position.X = 297.000000000000000000
@@ -146,6 +153,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 2
       Text = '3'
+      OnClick = BtnTresClick
     end
     object BtnUm: TButton
       Position.X = 10.000000000000000000
@@ -155,6 +163,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 0
       Text = '1'
+      OnClick = BtnUmClick
     end
     object BtnZero: TButton
       Position.X = 106.000000000000000000
@@ -164,6 +173,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 13
       Text = '0'
+      OnClick = BtnZeroClick
     end
   end
   object CaixaTopo: TLayout
@@ -197,20 +207,21 @@ object Form1: TForm1
           TextSettings.Font.Size = 28.000000000000000000
           TextSettings.Font.StyleExt = {00060000000000000004000000}
           TextSettings.HorzAlign = Center
-          Text = '0'
+          Text = '.'
           TabOrder = 0
         end
       end
     end
-    object LblResultado: TLabel
-      StyledSettings = [Family, FontColor]
+    object Z: TLabel
+      StyledSettings = [Family]
       Position.X = 8.000000000000000000
-      Position.Y = 106.000000000000000000
+      Position.Y = 81.000000000000000000
       Size.Width = 153.000000000000000000
-      Size.Height = 39.000000000000000000
+      Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 28.000000000000000000
-      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = claBlue
       Text = 'Resultado :'
       TabOrder = 1
       object EditResultado: TEdit
@@ -219,9 +230,8 @@ object Form1: TForm1
         ReadOnly = True
         TextSettings.Font.Size = 28.000000000000000000
         TextSettings.Font.StyleExt = {00060000000000000004000000}
-        Position.X = 152.000000000000000000
-        Position.Y = -2.000000000000000000
-        Size.Width = 216.000000000000000000
+        Position.Y = 29.000000000000000000
+        Size.Width = 367.000000000000000000
         Size.Height = 34.000000000000000000
         Size.PlatformDefault = False
         StyledSettings = [Family, FontColor]

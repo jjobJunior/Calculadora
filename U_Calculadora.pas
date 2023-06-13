@@ -31,13 +31,23 @@ type
     EditDois: TEdit;
     EditUm: TEdit;
     LblOperador: TLabel;
-    LblResultado: TLabel;
+    Z: TLabel;
     EditResultado: TEdit;
     procedure BtnSomaClick(Sender: TObject);
     procedure BtnSubtrairClick(Sender: TObject);
     procedure BtnMultiplicarClick(Sender: TObject);
     procedure BtnDividirClick(Sender: TObject);
     procedure BtnIgualClick(Sender: TObject);
+    procedure BtnUmClick(Sender: TObject);
+    procedure BtnDoisClick(Sender: TObject);
+    procedure BtnTresClick(Sender: TObject);
+    procedure BtnQuatroClick(Sender: TObject);
+    procedure BtnCincoClick(Sender: TObject);
+    procedure BtnSeisClick(Sender: TObject);
+    procedure BtnSeteClick(Sender: TObject);
+    procedure BtnOitoClick(Sender: TObject);
+    procedure BtnNoveClick(Sender: TObject);
+    procedure BtnZeroClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -51,6 +61,18 @@ implementation
 
 {$R *.fmx}
 
+procedure TForm1.BtnDoisClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '2';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '2';
+  end;
+end;
+
 procedure TForm1.BtnIgualClick(Sender: TObject);
 var
   valorUm, valorDois, resultado: Double;
@@ -61,59 +83,71 @@ begin
   valorUm := strToFloat(EditUm.Text);
   valorDois := strToFloat(EditDois.Text);
 
-  { if (LblOperador.Text = '+') then
+  if (LblOperador.Text = '+') then
+  begin
+    resultado := valorUm + valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+  end
+  else if (LblOperador.Text = '-') then
+  begin
+    resultado := valorUm - valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+  end
+  else if (LblOperador.Text = '*') then
+  begin
+    resultado := valorUm * valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+  end
+  else if (LblOperador.Text = '/') then
+  begin
+    resultado := valorUm / valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+  end;
+
+  { resultadoSwit := LblOperador.Text[1];
+    case resultadoSwit of
+    '+':
     begin
     resultado := valorUm + valorDois;
     // showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
-    end
-    else if (LblOperador.Text = '-') then
+    end;
+    '-':
     begin
     resultado := valorUm - valorDois;
     // showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
-    end
-    else if (LblOperador.Text = '*') then
+    end;
+    '*':
     begin
     resultado := valorUm * valorDois;
     // showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
-    end
-    else if (LblOperador.Text = '/') then
+    end;
+    '/':
     begin
     resultado := valorUm / valorDois;
     // showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
+    end;
     end; }
 
-  resultadoSwit := LblOperador.Text[1];
-  case resultadoSwit of
-    '+':
-      begin
-        resultado := valorUm + valorDois;
-        // showmessage(floatToStr(resultado));
-        EditResultado.Text := resultado.ToString;
-      end;
-    '-':
-      begin
-        resultado := valorUm - valorDois;
-        // showmessage(floatToStr(resultado));
-        EditResultado.Text := resultado.ToString;
-      end;
-    '*':
-      begin
-        resultado := valorUm * valorDois;
-        // showmessage(floatToStr(resultado));
-        EditResultado.Text := resultado.ToString;
-      end;
-    '/':
-      begin
-        resultado := valorUm / valorDois;
-        // showmessage(floatToStr(resultado));
-        EditResultado.Text := resultado.ToString;
-      end;
-  end;
+end;
 
+procedure TForm1.BtnCincoClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '5';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '5';
+  end;
 end;
 
 procedure TForm1.BtnDividirClick(Sender: TObject);
@@ -134,6 +168,66 @@ begin
   BtnDividir.Enabled := true;
 end;
 
+procedure TForm1.BtnNoveClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '9';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '9';
+  end;
+end;
+
+procedure TForm1.BtnOitoClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '8';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '8';
+  end;
+end;
+
+procedure TForm1.BtnQuatroClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '4';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '4';
+  end;
+end;
+
+procedure TForm1.BtnSeisClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '6';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '6';
+  end;
+end;
+
+procedure TForm1.BtnSeteClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '7';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '7';
+  end;
+end;
+
 procedure TForm1.BtnSomaClick(Sender: TObject);
 begin
   LblOperador.Text := '+';
@@ -150,6 +244,44 @@ begin
   BtnSubtrair.Enabled := false;
   BtnMultiplicar.Enabled := true;
   BtnDividir.Enabled := true;
+end;
+
+procedure TForm1.BtnTresClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '3';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '3';
+  end;
+end;
+
+procedure TForm1.BtnUmClick(Sender: TObject);
+begin
+
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '1';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '1';
+  end;
+
+end;
+
+procedure TForm1.BtnZeroClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + '0';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + '0';
+  end;
 end;
 
 end.
