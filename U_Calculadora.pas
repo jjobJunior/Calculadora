@@ -108,6 +108,10 @@ begin
     EditResultado.Text := resultado.ToString;
   end;
 
+  EditUm.Text := '';
+  EditDois.Text := '';
+  LblOperador.Text := '.';
+
   { resultadoSwit := LblOperador.Text[1];
     case resultadoSwit of
     '+':

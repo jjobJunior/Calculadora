@@ -180,15 +180,15 @@ object Form1: TForm1
     Position.X = 8.000000000000000000
     Position.Y = 8.000000000000000000
     Size.Width = 384.000000000000000000
-    Size.Height = 153.000000000000000000
+    Size.Height = 137.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object EditDois: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       TabOrder = 0
-      Position.X = 240.000000000000000000
-      Position.Y = 32.000000000000000000
-      Size.Width = 136.000000000000000000
+      Position.X = 239.000000000000000000
+      Position.Y = 27.000000000000000000
+      Size.Width = 137.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       object EditUm: TEdit
@@ -201,7 +201,7 @@ object Form1: TForm1
         object LblOperador: TLabel
           StyledSettings = [Family, FontColor]
           Position.X = 163.000000000000000000
-          Size.Width = 49.000000000000000000
+          Size.Width = 43.000000000000000000
           Size.Height = 25.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.Size = 28.000000000000000000
@@ -215,7 +215,7 @@ object Form1: TForm1
     object Z: TLabel
       StyledSettings = [Family]
       Position.X = 8.000000000000000000
-      Position.Y = 81.000000000000000000
+      Position.Y = 65.000000000000000000
       Size.Width = 153.000000000000000000
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
@@ -230,7 +230,7 @@ object Form1: TForm1
         ReadOnly = True
         TextSettings.Font.Size = 28.000000000000000000
         TextSettings.Font.StyleExt = {00060000000000000004000000}
-        Position.Y = 29.000000000000000000
+        Position.Y = 28.000000000000000000
         Size.Width = 367.000000000000000000
         Size.Height = 34.000000000000000000
         Size.PlatformDefault = False
