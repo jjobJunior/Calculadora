@@ -46,16 +46,17 @@ object Form1: TForm1
     end
     object BtnIgual: TButton
       Position.X = 202.000000000000000000
-      Position.Y = 352.000000000000000000
+      Position.Y = 351.000000000000000000
       Size.Width = 80.000000000000000000
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 14
       Text = '='
+      OnClick = BtnIgualClick
     end
     object BtnMultiplicar: TButton
-      Position.X = 294.000000000000000000
-      Position.Y = 244.000000000000000000
+      Position.X = 297.000000000000000000
+      Position.Y = 241.000000000000000000
       Size.Width = 80.000000000000000000
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
@@ -118,8 +119,8 @@ object Form1: TForm1
       Text = '7'
     end
     object BtnSoma: TButton
-      Position.X = 294.000000000000000000
-      Position.Y = 352.000000000000000000
+      Position.X = 297.000000000000000000
+      Position.Y = 351.000000000000000000
       Size.Width = 80.000000000000000000
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
@@ -169,15 +170,15 @@ object Form1: TForm1
     Position.X = 8.000000000000000000
     Position.Y = 8.000000000000000000
     Size.Width = 384.000000000000000000
-    Size.Height = 98.000000000000000000
+    Size.Height = 153.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object EditDois: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       TabOrder = 0
-      Position.X = 273.000000000000000000
+      Position.X = 276.000000000000000000
       Position.Y = 32.000000000000000000
-      object EdtiUm: TEdit
+      object EditUm: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 0
         Position.X = -264.000000000000000000
@@ -193,6 +194,30 @@ object Form1: TForm1
           Text = '0'
           TabOrder = 0
         end
+      end
+    end
+    object LblResultado: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 106.000000000000000000
+      Size.Width = 141.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Resultado :'
+      TabOrder = 1
+      object EditResultado: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        ReadOnly = True
+        TextSettings.Font.Size = 28.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Position.X = 144.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, FontColor]
       end
     end
   end

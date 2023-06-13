@@ -31,6 +31,8 @@ type
     EditDois: TEdit;
     EditUm: TEdit;
     LblOperador: TLabel;
+    LblResultado: TLabel;
+    EditResultado: TEdit;
     procedure BtnSomaClick(Sender: TObject);
     procedure BtnSubtrairClick(Sender: TObject);
     procedure BtnMultiplicarClick(Sender: TObject);
@@ -50,11 +52,37 @@ implementation
 {$R *.fmx}
 
 procedure TForm1.BtnIgualClick(Sender: TObject);
-var
-  valorUm, valorDois: Double;
+var  valorUm, valorDois, resultado: Double;
+
 begin
   valorUm := strToFloat(EditUm.Text);
   valorDois := strToFloat(EditDois.Text);
+
+  if (LblOperador.Text = '+') then
+  begin
+    resultado := valorUm + valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+  end
+  else if (LblOperador.Text = '-') then
+  begin
+    resultado := valorUm - valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+  end
+  else if (LblOperador.Text = '*') then
+  begin
+    resultado := valorUm * valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+  end
+  else if (LblOperador.Text = '/') then
+  begin
+    resultado := valorUm / valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+  end;
+
 end;
 
 procedure TForm1.BtnDividirClick(Sender: TObject);
@@ -69,7 +97,7 @@ end;
 procedure TForm1.BtnMultiplicarClick(Sender: TObject);
 begin
   LblOperador.Text := '*';
-    BtnSoma.Enabled := true;
+  BtnSoma.Enabled := true;
   BtnSubtrair.Enabled := true;
   BtnMultiplicar.Enabled := false;
   BtnDividir.Enabled := true;
@@ -78,7 +106,7 @@ end;
 procedure TForm1.BtnSomaClick(Sender: TObject);
 begin
   LblOperador.Text := '+';
-    BtnSoma.Enabled := false;
+  BtnSoma.Enabled := false;
   BtnSubtrair.Enabled := true;
   BtnMultiplicar.Enabled := true;
   BtnDividir.Enabled := true;
@@ -87,7 +115,7 @@ end;
 procedure TForm1.BtnSubtrairClick(Sender: TObject);
 begin
   LblOperador.Text := '-';
-    BtnSoma.Enabled := true;
+  BtnSoma.Enabled := true;
   BtnSubtrair.Enabled := false;
   BtnMultiplicar.Enabled := true;
   BtnDividir.Enabled := true;

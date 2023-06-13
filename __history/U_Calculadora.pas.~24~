@@ -31,6 +31,8 @@ type
     EditDois: TEdit;
     EditUm: TEdit;
     LblOperador: TLabel;
+    LblResultado: TLabel;
+    EditResultado: TEdit;
     procedure BtnSomaClick(Sender: TObject);
     procedure BtnSubtrairClick(Sender: TObject);
     procedure BtnMultiplicarClick(Sender: TObject);
@@ -51,10 +53,67 @@ implementation
 
 procedure TForm1.BtnIgualClick(Sender: TObject);
 var
-  valorUm, valorDois: Double;
+  valorUm, valorDois, resultado: Double;
+var
+  resultadoSwit: Char;
+
 begin
   valorUm := strToFloat(EditUm.Text);
   valorDois := strToFloat(EditDois.Text);
+
+  { if (LblOperador.Text = '+') then
+    begin
+    resultado := valorUm + valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+    end
+    else if (LblOperador.Text = '-') then
+    begin
+    resultado := valorUm - valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+    end
+    else if (LblOperador.Text = '*') then
+    begin
+    resultado := valorUm * valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+    end
+    else if (LblOperador.Text = '/') then
+    begin
+    resultado := valorUm / valorDois;
+    // showmessage(floatToStr(resultado));
+    EditResultado.Text := resultado.ToString;
+    end; }
+
+  resultadoSwit := LblOperador.Text[1];
+  case resultadoSwit of
+    '+':
+      begin
+        resultado := valorUm / valorDois;
+        // showmessage(floatToStr(resultado));
+        EditResultado.Text := resultado.ToString;
+      end;
+    '-':
+      begin
+        resultado := valorUm / valorDois;
+        // showmessage(floatToStr(resultado));
+        EditResultado.Text := resultado.ToString;
+      end;
+    '*':
+      begin
+        resultado := valorUm / valorDois;
+        // showmessage(floatToStr(resultado));
+        EditResultado.Text := resultado.ToString;
+      end;
+    '/':
+      begin
+        resultado := valorUm / valorDois;
+        // showmessage(floatToStr(resultado));
+        EditResultado.Text := resultado.ToString;
+      end;
+  end;
+
 end;
 
 procedure TForm1.BtnDividirClick(Sender: TObject);

@@ -54,33 +54,64 @@ implementation
 procedure TForm1.BtnIgualClick(Sender: TObject);
 var
   valorUm, valorDois, resultado: Double;
+var
+  resultadoSwit: Char;
+
 begin
   valorUm := strToFloat(EditUm.Text);
   valorDois := strToFloat(EditDois.Text);
 
-  if (LblOperador.Text = '+') then
-  begin
+  { if (LblOperador.Text = '+') then
+    begin
     resultado := valorUm + valorDois;
     // showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
-  end
-  else if (LblOperador.Text = '-') then
-  begin
+    end
+    else if (LblOperador.Text = '-') then
+    begin
     resultado := valorUm - valorDois;
     // showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
-  end
-  else if (LblOperador.Text = '*') then
-  begin
+    end
+    else if (LblOperador.Text = '*') then
+    begin
     resultado := valorUm * valorDois;
     // showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
-  end
-  else if (LblOperador.Text = '/') then
-  begin
+    end
+    else if (LblOperador.Text = '/') then
+    begin
     resultado := valorUm / valorDois;
     // showmessage(floatToStr(resultado));
     EditResultado.Text := resultado.ToString;
+    end; }
+
+  resultadoSwit := LblOperador.Text[1];
+  case resultadoSwit of
+    '+':
+      begin
+        resultado := valorUm + valorDois;
+        // showmessage(floatToStr(resultado));
+        EditResultado.Text := resultado.ToString;
+      end;
+    '-':
+      begin
+        resultado := valorUm - valorDois;
+        // showmessage(floatToStr(resultado));
+        EditResultado.Text := resultado.ToString;
+      end;
+    '*':
+      begin
+        resultado := valorUm * valorDois;
+        // showmessage(floatToStr(resultado));
+        EditResultado.Text := resultado.ToString;
+      end;
+    '/':
+      begin
+        resultado := valorUm / valorDois;
+        // showmessage(floatToStr(resultado));
+        EditResultado.Text := resultado.ToString;
+      end;
   end;
 
 end;
