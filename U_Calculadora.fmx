@@ -18,9 +18,9 @@ object Form1: TForm1
     TabOrder = 0
     object BtnCinco: TButton
       Position.X = 106.000000000000000000
-      Position.Y = 244.000000000000000000
+      Position.Y = 250.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
       Text = '5'
@@ -28,9 +28,9 @@ object Form1: TForm1
     end
     object BtnDividir: TButton
       Position.X = 297.000000000000000000
-      Position.Y = 188.000000000000000000
+      Position.Y = 194.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 3
       Text = '/'
@@ -38,9 +38,9 @@ object Form1: TForm1
     end
     object BtnDois: TButton
       Position.X = 106.000000000000000000
-      Position.Y = 188.000000000000000000
+      Position.Y = 194.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       Text = '2'
@@ -48,9 +48,9 @@ object Form1: TForm1
     end
     object BtnIgual: TButton
       Position.X = 202.000000000000000000
-      Position.Y = 351.000000000000000000
+      Position.Y = 357.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 14
       Text = '='
@@ -58,9 +58,9 @@ object Form1: TForm1
     end
     object BtnMultiplicar: TButton
       Position.X = 297.000000000000000000
-      Position.Y = 244.000000000000000000
+      Position.Y = 250.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 7
       Text = '*'
@@ -68,9 +68,9 @@ object Form1: TForm1
     end
     object BtnNove: TButton
       Position.X = 202.000000000000000000
-      Position.Y = 298.000000000000000000
+      Position.Y = 304.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 10
       Text = '9'
@@ -78,9 +78,9 @@ object Form1: TForm1
     end
     object BtnOito: TButton
       Position.X = 106.000000000000000000
-      Position.Y = 298.000000000000000000
+      Position.Y = 304.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 9
       Text = '8'
@@ -88,18 +88,19 @@ object Form1: TForm1
     end
     object BtnPonto: TButton
       Position.X = 10.000000000000000000
-      Position.Y = 351.000000000000000000
+      Position.Y = 357.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 12
-      Text = '.'
+      Text = ','
+      OnClick = BtnPontoClick
     end
     object BtnQuatro: TButton
       Position.X = 10.000000000000000000
-      Position.Y = 244.000000000000000000
+      Position.Y = 250.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 4
       Text = '4'
@@ -107,9 +108,9 @@ object Form1: TForm1
     end
     object BtnSeis: TButton
       Position.X = 202.000000000000000000
-      Position.Y = 244.000000000000000000
+      Position.Y = 250.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 6
       Text = '6'
@@ -117,9 +118,9 @@ object Form1: TForm1
     end
     object BtnSete: TButton
       Position.X = 10.000000000000000000
-      Position.Y = 298.000000000000000000
+      Position.Y = 304.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 8
       Text = '7'
@@ -127,9 +128,9 @@ object Form1: TForm1
     end
     object BtnSoma: TButton
       Position.X = 297.000000000000000000
-      Position.Y = 351.000000000000000000
+      Position.Y = 357.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 15
       Text = '+'
@@ -137,9 +138,9 @@ object Form1: TForm1
     end
     object BtnSubtrair: TButton
       Position.X = 297.000000000000000000
-      Position.Y = 298.000000000000000000
+      Position.Y = 304.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 11
       Text = '-'
@@ -147,9 +148,9 @@ object Form1: TForm1
     end
     object BtnTres: TButton
       Position.X = 202.000000000000000000
-      Position.Y = 188.000000000000000000
+      Position.Y = 194.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
       Text = '3'
@@ -157,9 +158,9 @@ object Form1: TForm1
     end
     object BtnUm: TButton
       Position.X = 10.000000000000000000
-      Position.Y = 188.000000000000000000
+      Position.Y = 194.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       Text = '1'
@@ -167,9 +168,9 @@ object Form1: TForm1
     end
     object BtnZero: TButton
       Position.X = 106.000000000000000000
-      Position.Y = 351.000000000000000000
+      Position.Y = 357.000000000000000000
       Size.Width = 80.000000000000000000
-      Size.Height = 45.000000000000000000
+      Size.Height = 39.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 13
       Text = '0'
@@ -236,6 +237,30 @@ object Form1: TForm1
         Size.PlatformDefault = False
         StyledSettings = [Family, FontColor]
       end
+    end
+  end
+  object BtnExcluir: TButton
+    StyledSettings = [Family, Size, Style]
+    Position.X = 17.000000000000000000
+    Position.Y = 153.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'replytoolbutton'
+    TabOrder = 2
+    Text = 'BtnExcluir'
+    OnClick = BtnExcluirClick
+    object BtnClear: TButton
+      StyledSettings = [Family, FontColor]
+      Position.X = 96.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 147
+      Text = 'C'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      OnClick = BtnClearClick
     end
   end
 end

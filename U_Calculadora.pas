@@ -33,6 +33,8 @@ type
     LblOperador: TLabel;
     Z: TLabel;
     EditResultado: TEdit;
+    BtnExcluir: TButton;
+    BtnClear: TButton;
     procedure BtnSomaClick(Sender: TObject);
     procedure BtnSubtrairClick(Sender: TObject);
     procedure BtnMultiplicarClick(Sender: TObject);
@@ -48,6 +50,9 @@ type
     procedure BtnOitoClick(Sender: TObject);
     procedure BtnNoveClick(Sender: TObject);
     procedure BtnZeroClick(Sender: TObject);
+    procedure BtnExcluirClick(Sender: TObject);
+    procedure BtnPontoClick(Sender: TObject);
+    procedure BtnClearClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -112,6 +117,11 @@ begin
   EditDois.Text := '';
   LblOperador.Text := '.';
 
+  BtnSoma.Enabled := true;
+  BtnSubtrair.Enabled := true;
+  BtnMultiplicar.Enabled := true;
+  BtnDividir.Enabled := true;
+
   { resultadoSwit := LblOperador.Text[1];
     case resultadoSwit of
     '+':
@@ -154,6 +164,19 @@ begin
   end;
 end;
 
+procedure TForm1.BtnClearClick(Sender: TObject);
+begin
+  EditUm.Text := '';
+  EditDois.Text := '';
+  EditResultado.Text := '';
+  LblOperador.Text := '.';
+  BtnSoma.Enabled := true;
+  BtnSubtrair.Enabled := true;
+  BtnMultiplicar.Enabled := true;
+  BtnDividir.Enabled := true;
+
+end;
+
 procedure TForm1.BtnDividirClick(Sender: TObject);
 begin
   LblOperador.Text := '/';
@@ -193,6 +216,18 @@ begin
   else
   begin
     EditDois.Text := EditDois.Text + '8';
+  end;
+end;
+
+procedure TForm1.BtnPontoClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := EditUm.Text + ',';
+  end
+  else
+  begin
+    EditDois.Text := EditDois.Text + ',';
   end;
 end;
 
@@ -286,6 +321,19 @@ begin
   begin
     EditDois.Text := EditDois.Text + '0';
   end;
+end;
+
+procedure TForm1.BtnExcluirClick(Sender: TObject);
+begin
+  if LblOperador.Text = '.' then
+  begin
+    EditUm.Text := copy(EditUm.Text, 0, length(EditUm.Text) - 1);
+  end
+  else
+  begin
+    EditDois.Text := copy(EditDois.Text, 0, length(EditDois.Text) - 1);
+  end;
+
 end;
 
 end.
